@@ -13,10 +13,13 @@ namespace stopwatch
         static void Menu ()
         {
             Console.Clear();
-            Console.WriteLine("S = Segundo");
-            Console.WriteLine("M = Minuto");
+            Console.WriteLine("S = Segundo => 10 S = 10 segundos.");
+            Console.WriteLine("M = Minuto => 1 M = 1 minuto.");
             Console.WriteLine("0 = Sair");
             Console.WriteLine("Quanto tempo deseja contar?");
+
+            string data = Console.ReadLine().ToLower();
+            Console.WriteLine(data);
         }
 
         static void Start (int time)
